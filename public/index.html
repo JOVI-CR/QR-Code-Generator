@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/ernest-borgnine" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Crie Seu QR Code</h1>
+        <form action="/generate" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="url">Insira a URL:</label>
+                <input type="text" class="form-control" id="url" name="url" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Criar QR Code</button>
+        </form>
+    </div>
+
+    <div id="qr-code-container" class="mt-4" style="display: none;">
+        <h2 class="text-center">Seu QR Code:</h2>
+        <img id="qr-code" src="" class="img-fluid" alt="QR Code">
+        <br>
+        <a id="download-btn" href="" download class="btn btn-success mt-2">Download QR Code</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 João Vítor Carlos da Rocha. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>João Vítor Carlos da Rocha</strong></p>
+        <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:joaovcrocha1501@gmail.com">joaovcrocha1501@gmail.com</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/JOVI-CR" target="_blank">github.com/JOVI-CR</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joao-vitor-carlos-da-rocha/" target="_blank">linkedin.com/in/joao-vitor-carlos-da-rocha/
+        </ul>
+      </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+      <script src="script.js"></script> 
+</body>
+</html>
