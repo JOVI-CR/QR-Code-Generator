@@ -17,10 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
+  console.log("Rota / acessada");
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.post("/generate", (req, res) => {
+  console.log("Rota /generate");
   const url = req.body.url;
 
   if (url) {
