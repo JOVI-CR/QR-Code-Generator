@@ -2,14 +2,8 @@
     "version": 2,
     "routes": [
       {
-        "src": "/generate",
-        "methods": ["POST"],
-        "dest": "/app.js"
-      },
-      {
         "src": "/(.*)",
         "dest": "/app.js"
       }
     ]
   }
-  
