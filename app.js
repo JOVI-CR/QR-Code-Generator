@@ -60,8 +60,8 @@ app.post("/generate", (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-if (require.main === module) {
+
   app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
   });
-}
+
